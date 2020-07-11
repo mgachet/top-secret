@@ -1,0 +1,23 @@
+{
+  "name": "top-secret",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgachet/top-secret.git"
+  },
+  "author": "Marcelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgachet/top-secret/issues"
+  },
+  "homepage": "https://github.com/mgachet/top-secret#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
