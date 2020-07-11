@@ -3,13 +3,10 @@ module.exports = function (app) {
     // If the user has valid login credentials, send them to the members page.
     // Otherwise the user will be sent an error
     app.get("/api/sample1", function (req, res) {
-        console.log({
-            success: true,
-            portNumber: process.env.PORT
-        });
         res.json({
             success: true,
-            portNumber: process.env.PORT
+            portNumber: process.env.PORT,
+            mySuperSecretKey: process.env.MY_SUPER_SECRET_KEY
         });
     });
 };
