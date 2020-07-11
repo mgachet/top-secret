@@ -5,8 +5,8 @@ module.exports = function (app) {
     app.get("/api/sample1", function (req, res) {
         res.json({
             success: true,
-            portNumber: process.env.PORT,
-            mySuperSecretKey: process.env.MY_SUPER_SECRET_KEY
+            portNumber: process.env.PORT || 3000,
+            mySuperSecretKey: process.env.MY_SUPER_SECRET_KEY || "for your eyes only"
         });
     });
 };
